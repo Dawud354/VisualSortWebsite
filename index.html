@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Algorithm Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Visual Algorithm Sorter</h1>
+    </header>
+    <main>
+        <div id="layout">
+            <div id="user-input">
+                <h1>Sorting Algorithm</h1>
+                <label for="array-size">Array Size:</label>
+                <input type="number" id="array-size" value="30" min="1" max="200">
+                <label for="algorithm-select">Please select an algorithm</label>
+                <select id="algorithm-select"></select>
+                <div id="button-container">
+                <button id="generate-button">Generate</button>
+                <button id="sort-button">Sort</button>
+                <button id="stop-button">stop</button>
+                </div>
+            </div>
+            <div id="container"></div>
+        </div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

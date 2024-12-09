@@ -1,0 +1,121 @@
+/* style.css */
+
+/* Use a modern font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#layout {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 20px;
+    padding-left: 20px; /* Add horizontal padding */
+    padding-right: 20px; /* Add horizontal padding */
+}
+
+#user-input {
+    position: relative; /* Change to relative to stack naturally */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it is on top */
+    margin-bottom: 20px; /* Add some space below */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#button-container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    gap: 10px; /* Optional: Add space between buttons */
+}
+
+#button-container button {
+    flex: 1; /* Ensure buttons take equal space */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#button-container button:hover {
+    background-color: #45a049;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#container {
+    display: flex;
+    align-items: flex-end;
+    height: 400px;
+    width: 100%;
+    max-width: calc(100% - 40px); /* Ensure it doesn't exceed the layout's width */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 5vw; /* Using viewport width */
+    margin-right: 5vw; /* Using viewport width */
+}
+
+.bar {
+    background-color: #4CAF50;
+    margin: 0 1px;
+    transition: height 0.3s, background-color 0.3s;
+}
+
+.bar.comparing {
+    background-color: #FF5733; /* Color for swapped bars */
+}
+
+.bar.sorted {
+    background-color: #FFC300; /* Color for sorted bars */
+}
